@@ -1,11 +1,16 @@
 # ManagerSensei bootstrap
+Part of the four-CLI Sensei family: CodeSensei implements, ReviewSensei reviews,
+ManagerSensei coordinates, and QASensei independently verifies. CodeSensei is the
+new name for TaskAlong; existing `taskalong` command, import and state identities
+remain compatibility contracts until an explicit migration is qualified.
+
 
 A working, local, operator-driven CLI for one static G34 workflow. It turns a
 bounded request into actionable tasks, validates the graph, reserves handoffs,
 retains component run pointers and exact evidence bytes, and reports the next
 action after a fresh-process restart. Python 3.11+; no runtime dependencies.
 
-This is bootstrap scaffolding. Automatic TaskAlong/ReviewSensei/QA invocation,
+This is bootstrap scaffolding. Automatic CodeSensei/ReviewSensei/QASensei invocation,
 native status reconciliation, provider cost/token enforcement, dynamic repair,
 and live-provider qualification are **unsupported**. `claim` exports a handoff;
 the operator invokes the existing component and uses `record` to retain its
@@ -108,7 +113,7 @@ The current receipt is an **operator attestation**, not an automated parser or
 authenticator of a native QA/Review verdict. A trusted operator must map the
 actual component verdict faithfully and include accounting uncertainty in
 `obligations`; local hashes cannot prove origin or execution. This bootstrap gate
-does not independently establish that TaskAlong, ReviewSensei or QA ran. A real
+does not independently establish that CodeSensei, ReviewSensei or QASensei ran. A real
 pilot claim requires their actual native receipts and qualified adapters or
 explicit operator verification, retained separately from fixture conformance.
 
