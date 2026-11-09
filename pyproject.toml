@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manager-sensei"
+version = "0.1.0a1"
+description = "Local, operator-driven workflow coordinator bootstrap"
+requires-python = ">=3.11"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+
+[project.scripts]
+manager-sensei = "manager_sensei.cli:main"
+
+[tool.setuptools]
+packages = ["manager_sensei"]

@@ -1,0 +1,59 @@
+{
+  "behavior": {
+    "acceptance": {
+      "candidate-aligned": "Review and QA bind the same full manifest.",
+      "no-duplicate-effects": "Resume reuses retained completed work.",
+      "result-retained": "No silent truncation or omitted digest.",
+      "route-qualified": "Name the exact failing boundary."
+    },
+    "decision_owner": "operator",
+    "examples": [
+      "A small supported result retains all scope entries and its result digest.",
+      "For a valid large result, preserve it inside every current downstream bound or refuse before the first dependent irreversible effect.",
+      "If an earlier persistence/refinalization guard refuses, retain that exact boundary; do not claim hosted terminal failure."
+    ],
+    "goal": "Retain complete results or refuse before dependent effects.",
+    "non_goals": [
+      "No live recovery, release or larger budgets."
+    ]
+  },
+  "limits": {
+    "max_handoffs": null,
+    "repair_limit": null
+  },
+  "routes": {
+    "code": {
+      "available": false,
+      "capabilities": [],
+      "profile_ref": "unresolved:code-route",
+      "reason": "Qualify an existing Code CLI route before dispatch."
+    },
+    "manager": {
+      "available": true,
+      "capabilities": [
+        "prove_continuity"
+      ],
+      "profile_ref": "local:manager-sensei-bootstrap",
+      "reason": "Local deterministic operator-driven journal; no automatic native reconciliation."
+    },
+    "qa": {
+      "available": false,
+      "capabilities": [],
+      "profile_ref": "unresolved:qa-route",
+      "reason": "Qualify an independent QA route and receipt contract before dispatch."
+    },
+    "review": {
+      "available": false,
+      "capabilities": [],
+      "profile_ref": "unresolved:review-route",
+      "reason": "Qualify a Review CLI route and receipt contract before dispatch."
+    }
+  },
+  "schema": "sensei.manager.request/1.0",
+  "source": {
+    "repository": "fixture:review-sensei",
+    "base_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "workflow_id": "example-g34-draft",
+  "write_paths": []
+}
