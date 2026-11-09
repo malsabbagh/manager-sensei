@@ -19,7 +19,9 @@ passed CLI smoke checks. The tracked source, fresh Git history and both archive
 formats passed credential-pattern, private-path/link and entropy screening; wheel
 RECORD digests and MIT notices were verified. These checks are not an exhaustive
 guarantee for arbitrary future evidence.
-CI configuration is prepared; no hosted CI run or release is claimed.
+Hosted Linux CI on Python 3.11 and 3.14 passed controls, source/wheel builds and
+installed-wheel checks for the initial publication ([verified run](https://github.com/malsabbagh/manager-sensei/actions/runs/42575202854)).
+The workflow reruns on every push. No package-registry release is claimed.
 
 ## Not implemented or not qualified
 
